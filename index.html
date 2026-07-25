@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>나루브릿지 그룹 | NAROO Bridge Group</title>
+<meta name="description" content="주식회사 나루브릿지, 나루오피스, 나루프린팅">
+<link href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css" rel="stylesheet">
+<style>
+  :root{
+    --red:#c8102e;
+    --ink:#0e0e10;
+    --white:#ffffff;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;height:100%;background:#000;font-family:'Pretendard',-apple-system,BlinkMacSystemFont,'Malgun Gothic',sans-serif;}
+  .stage{position:relative;width:100%;height:100vh;min-height:560px;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;}
+  video.bg{position:absolute;top:50%;left:50%;min-width:100%;min-height:100%;width:auto;height:auto;transform:translate(-50%,-50%);object-fit:cover;z-index:0;}
+  .overlay{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0.35) 0%,rgba(0,0,0,0.25) 40%,rgba(0,0,0,0.75) 100%);z-index:1;}
+  .content{position:relative;z-index:2;text-align:center;color:#fff;padding:24px;width:100%;max-width:760px;}
+  .logo{font-size:15px;letter-spacing:.2em;text-transform:uppercase;font-weight:700;opacity:.9;margin-bottom:18px;}
+  .logo span{color:var(--red);}
+  h1{font-size:clamp(26px,4.2vw,44px);font-weight:800;letter-spacing:-0.02em;margin:0 0 12px;line-height:1.3;}
+  p.sub{font-size:15px;opacity:.85;margin:0 0 40px;}
+
+  .nav-cards{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;padding:0 8px;}
+  .nav-card{background:rgba(255,255,255,0.08);backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,0.25);border-radius:16px;padding:22px 26px;min-width:180px;flex:1;max-width:220px;text-decoration:none;color:#fff;transition:transform .2s ease, background .2s ease;}
+  .nav-card:hover{background:rgba(255,255,255,0.16);transform:translateY(-3px);}
+  .nav-card .name{font-size:16px;font-weight:800;margin-bottom:6px;}
+  .nav-card .desc{font-size:12.5px;opacity:.75;}
+
+  .scroll-hint{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);z-index:2;color:#fff;opacity:.6;font-size:12px;letter-spacing:.05em;}
+
+  @media (max-width:640px){
+    .nav-cards{flex-direction:column;align-items:center;}
+    .nav-card{max-width:280px;width:100%;}
+  }
+</style>
+</head>
+<body>
+
+<section class="stage">
+  <video class="bg" autoplay muted loop playsinline>
+    <source src="______________________________.mp4" type="video/mp4">
+  </video>
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="logo">NAROO <span>BRIDGE</span> GROUP</div>
+    <h1>나루브릿지가 만들어가는<br>세 가지 이야기</h1>
+    <p class="sub">경영컨설팅부터 공간, 제작까지 — 아래에서 원하는 곳으로 이동하세요.</p>
+
+    <div class="nav-cards">
+      <a class="nav-card" href="https://company.naroobridge.com" target="_blank" rel="noopener">
+        <div class="name">(주)나루브릿지</div>
+        <div class="desc">경영컨설팅</div>
+      </a>
+      <a class="nav-card" href="https://naroooffice1.naroobridge.com" target="_blank" rel="noopener">
+        <div class="name">나루오피스</div>
+        <div class="desc">시간제 예약 오피스</div>
+      </a>
+      <a class="nav-card" href="printing.html">
+        <div class="name">나루프린팅</div>
+        <div class="desc">제작·프린팅</div>
+      </a>
+    </div>
+  </div>
+</section>
+
+</body>
+</html>
